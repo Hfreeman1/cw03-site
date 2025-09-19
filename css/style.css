@@ -10,3 +10,25 @@ h1, h2, h3, h4, h5, h6 { margin: 10px 0; }
 #ex2-answer { float: right; max-width: 320px; background: #eaf6ea; border: 1px solid #c9e2c9; padding: 8px; border-radius: 6px; margin: 4px 0 8px 10px; }
 .clearfix::after { content:""; display:block; clear:both; }
 footer { text-align: center; color: #666; }
+
+/* Interactive Timetable (Additional Feature 5) */
+table.timetable { width: 100%; border-collapse: collapse; margin-top: 10px; }
+.timetable th, .timetable td { border: 1px solid #ccc; padding: 6px 8px; text-align: center; }
+.timetable thead th { background: #eee; }
+.timetable td.task { font-weight: bold; }
+.timetable td.lunch { background: #f5e2cc; }
+.timetable td.design { background: #e6f3ff; }
+.timetable td.dev { background: #e9f7e9; }
+.timetable td.content { background: #fff7cc; }
+.timetable td.test { background: #f3e6ff; }
+.timetable td.review { background: #ffe6ea; }
+/* simple interactivity */
+.timetable tr:hover td, .timetable tr:hover th { background: #f9f9f9; }
+.timetable td:hover { outline: 2px solid #888; }
+.legend { font-size: 0.95rem; margin-top: 6px; }
+.legend span { display: inline-block; padding: 4px 8px; border: 1px solid #ccc; margin-right: 6px; border-radius: 4px; }
+.legend .design { background: #e6f3ff; }
+.legend .dev { background: #e9f7e9; }
+.legend .content { background: #fff7cc; }
+.legend .test { background: #f3e6ff; }
+.legend .review { background: #ffe6ea; }

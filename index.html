@@ -18,6 +18,7 @@
     <a href="#ex3">Exercise 3</a>
     <a href="#ex4">Exercise 4</a>
     <a href="#ex5">Exercise 5</a>
+    <a href="#timetable">Timetable</a>
   </nav>
 
   <main>
@@ -109,6 +110,81 @@
         <p>Examples of tags (shown as text using entities):</p>
         <p>&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;, &lt;footer&gt;, &lt;h1&gt;–&lt;h6&gt;, &lt;p&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;, &lt;a&gt;, &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;, &lt;div&gt;, &lt;span&gt;</p>
         <p>Useful CSS: color, background, font-family, font-size, font-weight, margin, padding, border, border-radius, display, width, text-align.</p>
+      </div>
+    </section>
+
+    <section id="timetable" class="exercise">
+      <h2>Interactive Timetable – 1 Week (Mon–Fri, 9am–5pm)</h2>
+      <p>Team of 4: Haven Freeman, Teammate 2, Teammate 3, Teammate 4</p>
+      <table class="timetable" aria-label="Project build schedule">
+        <thead>
+          <tr>
+            <th colspan="6">CW03 Build Schedule</th>
+          </tr>
+          <tr>
+            <th>Time</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>9–10</th>
+            <td class="task design" rowspan="2">Plan &amp; Wireframes</td>
+            <td class="task dev">Repo Setup</td>
+            <td class="task content" rowspan="2">Content Draft</td>
+            <td class="task dev" rowspan="2">Build Pages</td>
+            <td class="task review">Peer Review</td>
+          </tr>
+          <tr>
+            <th>10–11</th>
+            <td class="task design">Style Guide</td>
+            <td class="task test">Validate HTML/CSS</td>
+          </tr>
+          <tr>
+            <th>11–12</th>
+            <td class="task dev">Index Structure</td>
+            <td class="task content">Write Copy</td>
+            <td class="task dev">Nav &amp; Links</td>
+            <td class="task content">Lyrics Sections</td>
+            <td class="task review">Revise</td>
+          </tr>
+          <tr>
+            <th>12–1</th>
+            <td class="lunch" colspan="5">Lunch</td>
+          </tr>
+          <tr>
+            <th>1–2</th>
+            <td class="task dev" rowspan="2">Exercise 1</td>
+            <td class="task dev" rowspan="2">Exercise 2</td>
+            <td class="task dev" rowspan="2">Exercise 3</td>
+            <td class="task dev" rowspan="2">Exercise 4</td>
+            <td class="task dev" rowspan="2">Exercise 5</td>
+          </tr>
+          <tr>
+            <th>2–3</th>
+          </tr>
+          <tr>
+            <th>3–4</th>
+            <td class="task test">Test Links</td>
+            <td class="task review">Review</td>
+            <td class="task test">Validate</td>
+            <td class="task content">Write Submission</td>
+            <td class="task review">Final Pass</td>
+          </tr>
+          <tr>
+            <th>4–5</th>
+            <td class="task review" colspan="2">Team Sync &amp; Fixes</td>
+            <td class="task dev">Publish (GitHub Pages)</td>
+            <td class="task review" colspan="2">Submit URL</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="legend">
+        <strong>Legend:</strong>
+        <span class="design">Design</span>
+        <span class="dev">Build</span>
+        <span class="content">Content</span>
+        <span class="test">Test</span>
+        <span class="review">Review</span>
       </div>
     </section>
 

@@ -1,6 +1,5 @@
 /* Exercise 4 external stylesheet */
 .lyrics { background: Chocolate; padding: 10px; }
-
 h2.artist { font-size: 14pt; font-weight: bold; color: Moccasin; }
 h1.title  { font-size: 14pt; font-weight: normal; color: Khaki; }
 h2.album  { font-size: 12pt; font-weight: normal; color: Khaki; }
