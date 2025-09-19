@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CW03 – Exercises 1–5 (Index)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Index – CW03</h1>
+    <h2>Web Programming – Exercises 1–5</h2>
+  </header>
+
+  <nav>
+    <a href="#ex1">Exercise 1</a>
+    <a href="#ex2">Exercise 2</a>
+    <a href="#ex3">Exercise 3</a>
+    <a href="#ex4">Exercise 4</a>
+    <a href="#ex5">Exercise 5</a>
+  </nav>
+
+  <main>
+
+    <section id="ex1" class="exercise">
+      <h2>Exercise 1 – External Style (Dark Red Text)</h2>
+      <p>Task: Add a basic <strong>external</strong> stylesheet property to change text color to dark red.</p>
+      <p class="darkred-text">This paragraph is styled using an external CSS class called <code>.darkred-text</code>.</p>
+      <p>This paragraph is not formatted with the dark red class.</p>
+    </section>
+
+    <section id="ex2" class="exercise clearfix">
+      <h2>Exercise 2 – Find the Deliberate Mistake</h2>
+      <div id="ex2-answer">
+        <h3>Answer</h3>
+        <p>The title says <em>“University of Georgia State”</em>. It should be <strong>“Georgia State University”</strong>.</p>
+      </div>
+      <h3>Embedded Styles Example (from prompt)</h3>
+      <p>The example shows an embedded stylesheet with the incorrect title text above.</p>
+    </section>
+
+    <section id="ex3" class="exercise">
+      <h2>Exercise 3 – Lyrics (Internal Styles)</h2>
+      <p>Use only the <code>h1</code>, <code>h2</code>, <code>body</code>, and <code>p</code> tags. Two or more classes are used for some of these tags.</p>
+      <style>
+        /* Internal stylesheet for Exercise 3 only */
+        .lyrics-internal { background: Chocolate; padding: 10px; }
+        h2.artist { font-size: 14pt; font-weight: bold; color: Moccasin; }
+        h1.title  { font-size: 14pt; font-weight: normal; color: Khaki; }
+        h2.album  { font-size: 12pt; font-weight: normal; color: Khaki; }
+        h2.year   { font-size: 12pt; font-weight: bold; color: Ivory; }
+        p.verse  { font-family: "Trebuchet MS", Trebuchet, sans-serif; font-size: 14pt; font-weight: bold; color: Gold; margin-left: 2cm; margin-right: 2cm; }
+        p.chorus { font-family: "Trebuchet MS", Trebuchet, sans-serif; font-size: 14pt; font-style: italic; font-weight: bold; color: Gold; margin-left: 4cm; margin-right: 4cm; }
+      </style>
+      <div class="lyrics-internal">
+        <h2 class="artist">Artist: Traditional</h2>
+        <h1 class="title">Song Title: Twinkle, Twinkle, Little Star</h1>
+        <h2 class="album">Album: Nursery Classics</h2>
+        <h2 class="year">Year: Public Domain</h2>
+
+        <p class="verse">Twinkle, twinkle, little star,<br>
+        How I wonder what you are!<br>
+        Up above the world so high,<br>
+        Like a diamond in the sky.</p>
+
+        <p class="chorus"><em>(Chorus)</em> Twinkle, twinkle, little star,<br>
+        How I wonder what you are!</p>
+
+        <p class="verse">When the blazing sun is gone,<br>
+        When he nothing shines upon,<br>
+        Then you show your little light,<br>
+        Twinkle, twinkle, all the night.</p>
+      </div>
+    </section>
+
+    <section id="ex4" class="exercise">
+      <h2>Exercise 4 – External Stylesheet for Lyrics</h2>
+      <p>Same content as Exercise 3, but now the styles come from an <strong>external</strong> stylesheet.</p>
+      <link rel="stylesheet" href="css/lyrics.css">
+      <div class="lyrics">
+        <h2 class="artist">Artist: Traditional</h2>
+        <h1 class="title">Song Title: Twinkle, Twinkle, Little Star</h1>
+        <h2 class="album">Album: Nursery Classics</h2>
+        <h2 class="year">Year: Public Domain</h2>
+
+        <p class="verse">Twinkle, twinkle, little star,<br>
+        How I wonder what you are!<br>
+        Up above the world so high,<br>
+        Like a diamond in the sky.</p>
+
+        <p class="chorus"><em>(Chorus)</em> Twinkle, twinkle, little star,<br>
+        How I wonder what you are!</p>
+
+        <p class="verse">When the blazing sun is gone,<br>
+        When he nothing shines upon,<br>
+        Then you show your little light,<br>
+        Twinkle, twinkle, all the night.</p>
+      </div>
+    </section>
+
+    <section id="ex5" class="exercise">
+      <h2>Exercise 5 – School Website (CSS Methods)</h2>
+      <div>
+        <h3>1) Advising the School</h3>
+        <p>Use one shared external stylesheet for all pages. Keep a simple style guide (colors, fonts, headings). Ask teachers to use the provided HTML templates and have one person review pages before posting.</p>
+        <h3>2) Process</h3>
+        <p>Start with a base external CSS file for the whole site. If a page needs a small change, use a short internal style on that page. Use inline styles only for one-time, special cases. This keeps the look consistent and makes updates easier.</p>
+        <h3>3) HTML Tags and CSS Styles</h3>
+        <p>Examples of tags (shown as text using entities):</p>
+        <p>&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;, &lt;footer&gt;, &lt;h1&gt;–&lt;h6&gt;, &lt;p&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;, &lt;a&gt;, &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;, &lt;div&gt;, &lt;span&gt;</p>
+        <p>Useful CSS: color, background, font-family, font-size, font-weight, margin, padding, border, border-radius, display, width, text-align.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© CW03 – Index Page</p>
+  </footer>
+</body>
+</html>
